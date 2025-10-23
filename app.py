@@ -35,4 +35,7 @@ def generate():
     response.headers['Content-Disposition'] = 'inline; filename=resume.pdf'
     return response
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
