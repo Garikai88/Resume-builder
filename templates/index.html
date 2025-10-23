@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalHire Toolkit - Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css')}}">   
+</head>
+<body>
+    <header>
+        <h1>Build a World-Class Resume</h1>
+        <p>Perfect for global jobs, internships and remote work.</p>    
+    </header>
+    <main>
+        <form action="/generate" method="POST">
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Education:</label>
+            <textarea name="education" required></textarea>
+
+            <label>Experience:</label>
+            <textarea name="experience" required></textarea>
+
+            <label>Skills:</label>
+            <textarea name="skills" required></textarea>
+
+            <label>Choose a Template:</label>
+            <select name="template">
+                <option value="classic">Classic</option>
+                <option value="modern">Modern</option>
+                <option value="bold">Bold</option>
+            </select>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GlobalHire Toolkit | Built by Garikai M. Mangobe </p>
+    </footer>
+</body>
+</html>

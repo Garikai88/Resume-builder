@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sttles.css')}}">
+</head>
+<body>
+    <main>
+        <h1>{{ name }}</h1>
+        <p><strong>Email:</strong>{{ email }}</p>
+
+        <h2>Education</h2>
+        <p>{{ education }}</p>
+
+        <h2>Experience</h2>
+        <p>{{ experience }}</p>
+
+        <h2>Skills</h2>
+        <p>{{ skills }}</p>
+    </main>
+</body>
+</html>
